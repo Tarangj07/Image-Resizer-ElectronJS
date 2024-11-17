@@ -1,34 +1,38 @@
-# image-resizer-app
+# Image Resizer
 
-An Electron application with React
+Electron application that allows you to select an image and easily change the width and/or height.
 
-## Recommended IDE Setup
+<div style="display: flex; justify-content: center">
+<img src="./assets/screen.png" width="400" />
+</div>
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+## Usage
 
-## Project Setup
-
-### Install
-
-```bash
-$ npm install
-```
-
-### Development
+Install dependencies:
 
 ```bash
-$ npm run dev
+
+npm install
 ```
 
-### Build
+Run:
 
 ```bash
-# For windows
-$ npm run build:win
-
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
+npm start
 ```
+
+You can also use `Electronmon` to constantly run and not have to reload after making changes
+
+```bash
+npx electronmon .
+```
+
+## Packaging
+
+There are multiple ways to package Electron apps. I would suggest [Electron Forge](https://www.electronforge.io/). I did not implement any packaging into this app.
+
+## Developer Mode
+
+If your `NODE_ENV` is set to `development` then you will have the dev tools enabled and available in the menu bar. It will also open them by default.
+
+When set to `production`, the dev tools will not be available.
